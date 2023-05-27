@@ -49,6 +49,10 @@
     "prepare": "simple-git-hooks",
     "up": "taze latest -I"
   },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "dotenv-expand": "^10.0.0"
+  },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.2.2",
     "@types/node": "^20.2.4",
