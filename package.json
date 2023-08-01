@@ -1,7 +1,7 @@
 {
   "name": "@ayingott/sucrose",
   "version": "0.0.4",
-  "packageManager": "pnpm@8.5.1",
+  "packageManager": "pnpm@8.6.11",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -50,23 +50,23 @@
     "up": "taze latest -I"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "dotenv-expand": "^10.0.0"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^0.2.2",
-    "@types/node": "^20.2.4",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.41.0",
-    "lint-staged": "^13.2.2",
-    "pnpm": "^8.5.1",
-    "prettier": "^2.8.8",
-    "simple-git-hooks": "^2.8.1",
-    "taze": "^0.10.1",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4",
-    "unplugin-auto-import": "^0.16.2",
-    "vitest": "^0.31.1"
+    "@ayingott/eslint-config": "^0.2.7",
+    "@types/node": "^20.4.5",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.46.0",
+    "lint-staged": "^13.2.3",
+    "pnpm": "^8.6.11",
+    "prettier": "^3.0.0",
+    "simple-git-hooks": "^2.9.0",
+    "taze": "^0.11.2",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "unplugin-auto-import": "^0.16.6",
+    "vitest": "^0.33.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
