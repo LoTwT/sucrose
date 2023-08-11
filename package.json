@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "packageManager": "pnpm@8.6.12",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
@@ -47,7 +47,8 @@
     "prepublishOnly": "pnpm build",
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
-    "up": "taze latest -I"
+    "up": "taze latest -I",
+    "changelogen": "changelogen -r --release"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -57,6 +58,7 @@
     "@ayingott/eslint-config": "^0.2.7",
     "@types/node": "^20.4.9",
     "bumpp": "^9.1.1",
+    "changelogen": "^0.5.4",
     "eslint": "^8.46.0",
     "lint-staged": "^13.2.3",
     "pnpm": "^8.6.12",
