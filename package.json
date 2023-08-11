@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "packageManager": "pnpm@8.6.12",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
@@ -48,7 +48,7 @@
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
     "up": "taze latest -I",
-    "a": "bumpp --execute 'git add a.txt'"
+    "a": "bumpp"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
