@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "packageManager": "pnpm@8.6.12",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
@@ -48,7 +48,7 @@
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
     "up": "taze latest -I",
-    "a": "bumpp --all"
+    "a": "bumpp -a"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
