@@ -45,11 +45,11 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "prepublishOnly": "pnpm build",
-    "release": "bumpp && npm publish",
+    "release": "pnpm bumpp && npm publish",
     "prepare": "simple-git-hooks",
     "up": "taze latest -I",
-    "changelogen": "changelogen -r 1.1.4",
-    "a": "bumpp"
+    "changelogen": "changelogen --output -r $npm_package_version",
+    "bumpp": "bumpp --execute 'pnpm changelogen'"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
