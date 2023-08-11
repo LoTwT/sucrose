@@ -45,11 +45,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "prepublishOnly": "pnpm build",
-    "release": "pnpm bumpp && npm publish",
+    "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
-    "up": "taze latest -I",
-    "changelogen": "changelogen --output -r $npm_package_version",
-    "bumpp": "bumpp --execute 'pnpm changelogen' package.json CHANGELOG.md"
+    "up": "taze latest -I"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -59,7 +57,6 @@
     "@ayingott/eslint-config": "^0.2.7",
     "@types/node": "^20.4.9",
     "bumpp": "^9.1.1",
-    "changelogen": "^0.5.4",
     "eslint": "^8.46.0",
     "lint-staged": "^13.2.3",
     "pnpm": "^8.6.12",
