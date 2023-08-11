@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "packageManager": "pnpm@8.6.12",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
@@ -47,7 +47,9 @@
     "prepublishOnly": "pnpm build",
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
-    "up": "taze latest -I"
+    "up": "taze latest -I",
+    "changelogen": "changelogen -r 1.1.4",
+    "a": "bumpp"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
