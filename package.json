@@ -47,8 +47,7 @@
     "prepublishOnly": "pnpm build",
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks",
-    "up": "taze latest -I",
-    "a": "bumpp --all"
+    "up": "taze latest -I"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
