@@ -1,9 +1,10 @@
 type ComposeFunction = (...args: any) => void
 
-export const composeFunctions =
-  <F extends ComposeFunction, P extends Parameters<F>>(
-    ...toComposedFunctions: F[]
-  ) =>
-  (...args: P) => {
-    toComposedFunctions.forEach((f) => f(args))
+export function composeFunctions<
+  F extends ComposeFunction | undefined,
+  Args extends unknown[] = [F] extends [undefined] ? [] : Parameters<F & []>,
+>(...toComposedFunctions: F[]) {
+  return (...args: Args) => {
+    toComposedFunctions?.forEach((f) => f?.(...args))
   }
+}
