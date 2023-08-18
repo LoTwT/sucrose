@@ -1,7 +1,7 @@
 {
   "name": "@ayingott/sucrose",
   "type": "module",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "packageManager": "pnpm@8.6.12",
   "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
