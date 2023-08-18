@@ -6,5 +6,5 @@ export default defineConfig({
   clean: true,
   target: "node16",
   dts: true,
-  external: ["dotenv"],
+  shims: true,
 })
