@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url"
 
 import { isWindows } from "./os"
 
-export const normalizeSlash = (p: string) => p.replace(/\\/g, "/")
+export const normalizeSlash = (p: string) => p.replaceAll("\\", "/")
 
 export const normalizePath = (id: string) =>
   path.posix.normalize(isWindows ? normalizeSlash(id) : id)
