@@ -8,6 +8,6 @@ export const normalizeSlash = (p: string) => p.replaceAll("\\", "/")
 export const normalizePath = (id: string) =>
   path.posix.normalize(isWindows ? normalizeSlash(id) : id)
 
-export const useDirname = (url: string) => fileURLToPath(new URL(".", url))
+export const getDirname = (url: string) => fileURLToPath(new URL(".", url))
 
-export const useFilename = (url: string) => fileURLToPath(url)
+export const getFilename = (url: string) => fileURLToPath(url)
