@@ -4,6 +4,9 @@ export default defineConfig({
   entry: ["./src/index.ts"],
   format: ["esm", "cjs"],
   clean: true,
-  target: "node16",
+  target: "esnext",
   dts: true,
+  splitting: true,
+  cjsInterop: true,
+  platform: "neutral",
 })
