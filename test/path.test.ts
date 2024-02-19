@@ -1,6 +1,6 @@
 import { resolve } from "node:path"
 import { cwd } from "node:process"
-import { getDirname, getFilename } from "@/utils"
+import { getDirname, getFilename, normalizeSlash } from "@/utils"
 
 function normalize(p: string) {
   const placeholder = "<Placeholder>"
@@ -9,9 +9,9 @@ function normalize(p: string) {
 
 describe("utils/path", () => {
   test("getDirname", () => {
-    expect(normalize(getDirname(import.meta.url))).toMatchInlineSnapshot(
-      `"<Placeholder>/test/"`,
-    )
+    expect(
+      normalizeSlash(normalize(getDirname(import.meta.url))),
+    ).toMatchInlineSnapshot(`"<Placeholder>/test/"`)
   })
 
   test("getFilename", () => {
