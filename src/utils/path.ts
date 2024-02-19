@@ -10,4 +10,9 @@ export const normalizePath = (id: string) =>
 
 export const getDirname = (url: string) => fileURLToPath(new URL(".", url))
 
-export const getFilename = (url: string) => fileURLToPath(url)
+export const getFilename = (url: string) => {
+  const filepath = normalizeSlash(fileURLToPath(url))
+  const filename = filepath.split("/").at(-1)
+
+  return filename
+}
