@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "sucrose",
   "type": "module",
   "packageManager": "pnpm@8.15.3",
