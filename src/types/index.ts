@@ -6,3 +6,6 @@ export type MayBeUndefined<T> = T | undefined
 
 export type Arrayable<T> = T | T[]
 export type MayBeArray<T> = T | T[]
+
+export type Promisable<T> = Promise<T> | T
+export type MayBePromise<T> = Promise<T> | T
