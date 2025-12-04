@@ -1,9 +1,9 @@
 {
   "name": "@ayingott/sucrose",
-  "version": "0.0.37",
-  "description": "sucrose",
   "type": "module",
-  "packageManager": "pnpm@8.15.5",
+  "version": "0.0.37",
+  "packageManager": "pnpm@10.24.0",
+  "description": "sucrose",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/sucrose#readme",
@@ -18,8 +18,8 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -50,24 +50,24 @@
     "watch": "tsup --watch"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "dotenv-expand": "^11.0.6"
+    "dotenv": "^17.2.3",
+    "dotenv-expand": "^12.0.3"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^0.8.2",
-    "@ayingott/prettier-config": "^0.2.1",
-    "@types/node": "^20.11.28",
-    "bumpp": "^9.4.0",
-    "eslint": "^8.57.0",
-    "lint-staged": "^15.2.2",
-    "pnpm": "^8.15.5",
-    "prettier": "^3.2.5",
-    "simple-git-hooks": "^2.11.0",
-    "taze": "^0.13.3",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.2",
-    "unplugin-auto-import": "^0.17.5",
-    "vitest": "^1.4.0"
+    "@ayingott/eslint-config": "^2.0.7",
+    "@ayingott/prettier-config": "^2.1.8",
+    "@types/node": "^24.10.1",
+    "bumpp": "^10.3.2",
+    "eslint": "^9.39.1",
+    "lint-staged": "^16.2.7",
+    "pnpm": "^10.24.0",
+    "prettier": "^3.7.4",
+    "simple-git-hooks": "^2.13.1",
+    "taze": "^19.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "vitest": "^4.0.15"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",

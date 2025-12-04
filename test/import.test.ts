@@ -1,7 +1,7 @@
 import { interopDefault } from "@/utils"
 
 describe("utils/import", () => {
-  test("interopDefault", () => {
+  it("interopDefault", () => {
     const m: Record<string, any> = {
       value: "outer",
     }

@@ -8,13 +8,13 @@ function normalize(p: string) {
 }
 
 describe("utils/path", () => {
-  test("getDirname", () => {
+  it("getDirname", () => {
     expect(
       normalizeSlash(normalize(getDirname(import.meta.url))),
     ).toMatchInlineSnapshot(`"<Placeholder>/test/"`)
   })
 
-  test("getFilename", () => {
+  it("getFilename", () => {
     expect(getFilename(import.meta.url)).toMatchInlineSnapshot(`"path.test.ts"`)
   })
 })

@@ -6,15 +6,15 @@ describe("utils/encoding", () => {
     const baseStr = "ayingott"
     const baseBuffer = new Uint8Array([97, 121, 105, 110, 103, 111, 116, 116])
 
-    test("base32ToBuf", () => {
+    it("base32ToBuf", () => {
       expect(base32ToBuf(base32Str)).toEqual(baseBuffer.buffer)
     })
 
-    test("base32FromBuf", () => {
+    it("base32FromBuf", () => {
       expect(base32FromBuf(baseBuffer.buffer)).toBe(base32Str)
     })
 
-    test("base32FromStr", () => {
+    it("base32FromStr", () => {
       expect(base32FromStr(baseStr)).toBe(base32Str)
     })
   })

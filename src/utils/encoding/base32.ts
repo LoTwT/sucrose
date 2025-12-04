@@ -11,7 +11,7 @@ const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"
  * @returns {ArrayBuffer} ArrayBuffer.
  * @see https://github.com/hectorm/otpauth/blob/dc356c9636af93ffff640ac81f779a1cf83b4337/src/utils/encoding/base32.js#L13
  */
-export const base32ToBuf = (str: string) => {
+export function base32ToBuf(str: string) {
   // Canonicalize to all upper case and remove padding if it exists.
   let end = str.length
   while (str[end - 1] === "=") --end
@@ -46,7 +46,7 @@ export const base32ToBuf = (str: string) => {
  * @returns {string} Base32 string.
  * @see https://github.com/hectorm/otpauth/blob/dc356c9636af93ffff640ac81f779a1cf83b4337/src/utils/encoding/base32.js#L47
  */
-export const base32FromBuf = (buf: ArrayBufferLike) => {
+export function base32FromBuf(buf: ArrayBufferLike) {
   const arr = new Uint8Array(buf)
   let bits = 0
   let value = 0
@@ -72,5 +72,6 @@ export const base32FromBuf = (buf: ArrayBufferLike) => {
 /**
  * Converts an string to a base32 string
  */
-export const base32FromStr = (str: string) =>
-  base32FromBuf(new TextEncoder().encode(str).buffer)
+export function base32FromStr(str: string) {
+  return base32FromBuf(new TextEncoder().encode(str).buffer)
+}
