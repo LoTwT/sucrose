@@ -46,7 +46,7 @@ export const base32ToBuf = (str: string) => {
  * @returns {string} Base32 string.
  * @see https://github.com/hectorm/otpauth/blob/dc356c9636af93ffff640ac81f779a1cf83b4337/src/utils/encoding/base32.js#L47
  */
-export const base32FromBuf = (buf: ArrayBuffer) => {
+export const base32FromBuf = (buf: ArrayBufferLike) => {
   const arr = new Uint8Array(buf)
   let bits = 0
   let value = 0
@@ -73,4 +73,4 @@ export const base32FromBuf = (buf: ArrayBuffer) => {
  * Converts an string to a base32 string
  */
 export const base32FromStr = (str: string) =>
-  base32FromBuf(new TextEncoder().encode(str))
+  base32FromBuf(new TextEncoder().encode(str).buffer)
