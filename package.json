@@ -15,16 +15,12 @@
     "url": "https://github.com/LoTwT/sucrose/issues"
   },
   "keywords": [],
-  "sideEffects": false,
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./dist/index.mjs"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "typesVersions": {
     "*": {
       "*": [
@@ -37,7 +33,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "simple-git-hooks",
@@ -47,7 +43,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "up": "taze latest -I",
-    "watch": "tsup --watch"
+    "watch": "tsdown --watch"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
@@ -64,7 +60,7 @@
     "prettier": "^3.7.4",
     "simple-git-hooks": "^2.13.1",
     "taze": "^19.9.2",
-    "tsup": "^8.5.1",
+    "tsdown": "0.17.0-beta.6",
     "typescript": "^5.9.3",
     "unplugin-auto-import": "^20.3.0",
     "vitest": "^4.0.15"
